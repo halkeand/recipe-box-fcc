@@ -4,4 +4,4 @@ const HeaderTitle = () => {
   return <h1 className="header-title">Recipe Box</h1>
 }
 
-export default HeaderTitle
+export default HeaderTitle;

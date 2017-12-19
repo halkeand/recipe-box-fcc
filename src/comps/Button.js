@@ -8,7 +8,12 @@ const Button = props => {
   return <button
           className="btn"
           onClick={boundClick}>
-          {props.btnType || 'Button'}
+          {
+            props.isAdding === undefined ?
+            props.btnType :
+            props.isAdding === true ? 'Close' :
+            props.isAdding === false ? 'Add new recipe' : ''
+          }
         </button>
 }
 
