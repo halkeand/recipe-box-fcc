@@ -2,12 +2,13 @@ import React from 'react';
 import Button from './Button';
 
 const Form = props => {
-  const { warning, onChange, ingredientsValue, nameValue, onSubmit } = props;
+  const { formClass, warning, onChange, ingredientsValue, nameValue, onSubmit } = props;
 
   return (
-    <form className="form">
+    <form className={`form ${formClass ? formClass : ''}`}>
       <label>Recipe Name
         <input
+          autoFocus
           name="nameValue"
           onChange={onChange}
           value={nameValue}

@@ -176,6 +176,7 @@ class App extends Component {
         {
           typeof isEditing === 'number' ?
           <Form
+            formClass="form-editing"
             nameValue={editingForm.nameValue}
             ingredientsValue={editingForm.ingredientsValue}
             onChange={this.handleEditingChange}
