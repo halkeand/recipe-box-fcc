@@ -20,3 +20,15 @@ export const giveObjFromId = (arr, id) => arr.filter(obj => obj.id === id)[0];
 
 //Retourne un tableau ne contenant pas l'objet avec la propriété id dont la valeur est passé en argument
 export const filterWithoutThisId = (arr, id) => arr.filter(obj => obj.id !== id);
+
+
+//Localstorage set
+export const setLS = (obj) => {
+  let string = JSON.stringify(obj);
+  return localStorage.setItem('state', string);
+}
+
+//Localstorage get
+export const getLS = () => {
+  return JSON.parse(localStorage.getItem('state'));
+}

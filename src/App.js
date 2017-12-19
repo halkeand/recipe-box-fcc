@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { isInputFilled, sanitizeObj, makeArr, giveObjFromId, filterWithoutThisId } from './utils';
+import { isInputFilled, sanitizeObj, makeArr, giveObjFromId, filterWithoutThisId, getLS, setLS } from './utils';
 
 import HeaderTitle from './comps/HeaderTitle';
 import Button from './comps/Button';
@@ -9,18 +9,25 @@ import Form from './comps/Form';
 import RecipesList from './comps/RecipesList';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
 
-  state = {
-    isAdding: false,
-    isEditing: '',
-    form: {
-      id: 0,
-      nameValue: '',
-      ingredientsValue: '',
-    },
-    warning: '',
-    recipesList: []
+    const giveLSStateOrEmpty = getLS() !== null ? getLS() :
+                                {
+                                  isAdding: false,
+                                  isEditing: '',
+                                  form: {
+                                    id: 0,
+                                    nameValue: '',
+                                    ingredientsValue: '',
+                                  },
+                                  warning: '',
+                                  recipesList: []
+                                }
+
+    this.state = giveLSStateOrEmpty;
   }
+
 
   //- - - - - - - - - - - Formulaire d'AJOUT
   //- - - - - - - - - - - - - - - - - - - -
@@ -148,6 +155,9 @@ class App extends Component {
   }
 
   render() {
+    //Each time we update the view we update the localstorage
+    setLS(this.state);
+
     const { editingForm, isEditing, recipesList, warning, isAdding, form } = this.state;
 
     return (
