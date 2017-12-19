@@ -3,7 +3,7 @@ import './App.css';
 
 import { isInputFilled, sanitizeObj, makeArr, giveObjFromId, filterWithoutThisId, getLS, setLS } from './utils';
 
-import HeaderTitle from './comps/HeaderTitle';
+import Header from './comps/Header';
 import Button from './comps/Button';
 import Form from './comps/Form';
 import RecipesList from './comps/RecipesList';
@@ -162,7 +162,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <HeaderTitle/>
+        <Header/>
         <Button
           btnType="Add"
           onClick={this.handleBtnClick}

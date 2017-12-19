@@ -8,6 +8,7 @@ const Form = props => {
     <form className={`form ${formClass ? formClass : ''}`}>
       <label>Recipe Name
         <input
+          className="input"
           autoFocus
           name="nameValue"
           onChange={onChange}
@@ -17,7 +18,8 @@ const Form = props => {
       </label>
 
       <label>Recipe Ingredients
-        <input
+        <textarea
+          className="input ingredients-input"
           name="ingredientsValue"
           onChange={onChange}
           value={ingredientsValue}
@@ -30,7 +32,7 @@ const Form = props => {
         onClick={onSubmit}/>
 
       {
-        warning ? <p>{warning}</p> : ''
+        warning ? <p className="warn-msg">{warning}</p> : ''
       }
     </form>
   )
