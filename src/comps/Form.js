@@ -5,7 +5,7 @@ const Form = props => {
   const { formClass, formType, warning, onChange, ingredientsValue, nameValue, onSubmit } = props;
 
   return (
-    <form className={`form ${formClass ? formClass : ''}`} id={formType}>
+    <form className={`form animated rotateInDownLeft ${formClass ? formClass : ''}`} id={formType}>
       <h1 className="form-title">{formType}</h1>
       <label>Recipe Name</label>
       <input

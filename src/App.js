@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
+//Css
 import './stylesheets/App.css';
+import 'animate.css'
 
 import { isInputFilled, sanitizeObj, makeArr, giveObjFromId, filterWithoutThisId, getLS, setLS } from './utils';
 

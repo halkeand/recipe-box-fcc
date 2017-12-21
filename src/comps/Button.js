@@ -6,7 +6,7 @@ const Button = props => {
   const boundClick = props.onClick.bind(this, props.btnType);
 
   return <button
-          className={props.classList}
+          className={`animated lightSpeedIn ${props.classList}`}
           onClick={boundClick}>
           {
             props.isAdding === undefined ?

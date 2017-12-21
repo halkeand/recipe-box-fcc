@@ -3,7 +3,7 @@ import React from 'react';
 const RecipeCard = props => {
   const { name, ingredients, onEdit, onDelete, recipeId } = props;
   return (
-    <div className="recipe-card">
+    <div className="recipe-card animated bounceIn">
       <h1 className="recipe-card-title">{name}</h1>
       <ul className="ingredient-list">
         {ingredients.map(ingredient => {
