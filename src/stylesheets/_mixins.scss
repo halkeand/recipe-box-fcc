@@ -50,3 +50,8 @@
     background-image: linear-gradient(to top left, darken($color, $darken-amount), darken(lighten($color, 20%), $darken-amount));
   }
 }
+
+@mixin form-margin {
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,8 @@
+.warn-msg {
+  @include form-margin;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(to top left, $warn-color, darken($warn-color, 20%));
+  border: 2px solid lighten($warn-color, 20%);
+  border-radius: $b-rad;
+}

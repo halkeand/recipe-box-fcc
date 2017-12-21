@@ -22,8 +22,7 @@
   label {padding: 10px;}
 
   input, textarea  {
-    margin-left: 20px;
-    margin-right: 20px;
+    @include form-margin;
     border-radius: $b-rad;
     border: 1px solid $b-shad-color;
     padding: 10px;
@@ -38,7 +37,6 @@
   }
 
   .btn {
-    margin-left: 20px;
-    margin-right: 20px;
+    @include form-margin;
   }
 }

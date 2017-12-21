@@ -32,7 +32,7 @@ const Form = props => {
         onClick={onSubmit}/>
 
       {
-        warning ? <p className="warn-msg">{warning}</p> : ''
+        warning ? <p className="warn-msg animated wobble">{warning}</p> : ''
       }
     </form>
   )
