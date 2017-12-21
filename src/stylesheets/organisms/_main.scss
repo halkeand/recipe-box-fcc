@@ -3,3 +3,8 @@
   flex-direction: column;
   padding-top: $header-height;
 }
+
+//When recipe adding is toggled, hide the main part, except the form
+.is-adding-recipe {
+  background: #ffffff;
+}

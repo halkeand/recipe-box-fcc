@@ -15,7 +15,7 @@ class App extends Component {
     const giveLSStateOrEmpty = getLS() !== null ? getLS() :
                                 {
                                   isAdding: false,
-                                  isEditing: '',
+                                  isEditing: '', //string by default, if a num is passed, le current edit is set on this recipe id, to reinit, pass an empty string
                                   form: {
                                     id: 0,
                                     nameValue: '',
@@ -35,7 +35,8 @@ class App extends Component {
   //Toggle le bouton d'jaout de recette
   handleBtnClick = (btnType) => {
     const toggleIsAddingState = () => this.setState(prevState => ({
-      isAdding: !prevState.isAdding
+      isAdding: !prevState.isAdding,
+      isEditing: ''
     }));
 
     btnType === 'Add' ?  toggleIsAddingState() :
@@ -77,7 +78,7 @@ class App extends Component {
     }
 
     isInputFilled(nameValue, ingredientsValue) ?
-    sendForm() : this.setWarning('You can not save a recipe without a name and an ingredient list')
+    sendForm() : this.setWarning('You can not save a recipe without a name and an ingredient list !')
   }
 
   //- - - - - - - - - - - Formulaire d'ÉDITION
@@ -87,6 +88,7 @@ class App extends Component {
   handleEdit = (e) => {
     const recipeId = Number(e.target.name);
     this.setState(prevState => ({
+      isAdding: false,
       isEditing: recipeId,
       editingForm: {
         id: recipeId,
@@ -162,7 +164,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <main className="main">
+        <main className={`main ${isAdding ? 'is-adding-recipe': ''}`}>
           <Button
             classList="btn btn-add-recipe"
             btnType="Add"

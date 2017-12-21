@@ -1,15 +1,30 @@
 .form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include b-shad;
+  border-radius: $b-rad;
+  border: 5px solid rgba(0,0,0,0);
+  background-image: linear-gradient(to top left, white, darken(white, 3%));
+  padding: 15px;
   width: 30%;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   textarea { resize:none }
   label, .warn-msg {text-align: center}
   label {padding: 10px;}
+
   input, textarea{
     border-radius: $b-rad;
     border: 1px solid $b-shad-color;
     padding: 10px;
     font-size: .8rem;
+    box-shadow: 0;
+    @include transit(box-shadow)
+    &:focus {
+      @include b-shad;
+      @include transit(box-shadow)
+    }
   }
   .btn {
     margin-left: 0;
