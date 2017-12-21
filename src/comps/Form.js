@@ -6,7 +6,7 @@ const Form = props => {
 
   return (
     <form className={`form ${formClass ? formClass : ''}`}>
-      <h1>{formType}</h1>
+      <h1 className="form-title">{formType}</h1>
       <label>Recipe Name</label>
       <input
         className="input"
