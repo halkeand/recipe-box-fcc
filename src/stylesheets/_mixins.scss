@@ -6,9 +6,9 @@
 
 
 @mixin b-shad {
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
-  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.15);
 }
 //Thanks CSS Tricks !
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
@@ -35,4 +35,18 @@
   background-size:100%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+
+@mixin transit ($prop){
+  transition: $prop .3s ease-in-out;
+}
+
+@mixin darker-gradient-on-active($color, $darken-amount) {
+  background-image: linear-gradient(to top left, $color, lighten($color, 20%));
+
+
+  &:active {
+    background-image: linear-gradient(to top left, darken($color, $darken-amount), darken(lighten($color, 20%), $darken-amount));
+  }
 }
