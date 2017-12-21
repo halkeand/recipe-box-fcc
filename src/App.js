@@ -164,6 +164,7 @@ class App extends Component {
         <Header/>
         <main className="main">
           <Button
+            classList="btn btn-add-recipe"
             btnType="Add"
             onClick={this.handleBtnClick}
             isAdding={isAdding}/>
