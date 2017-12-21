@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: $pm-font, sans-serif;
+  min-height: 100vh;
+
 }
 
 
@@ -14,5 +16,5 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  min-height: 100Vh;
+  min-height: 100vh;
 }

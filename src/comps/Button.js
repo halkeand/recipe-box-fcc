@@ -12,7 +12,7 @@ const Button = props => {
             props.isAdding === undefined ?
             props.btnType :
             props.isAdding === true ? 'Close' :
-            props.isAdding === false ? 'Add new recipe' : ''
+            props.isAdding === false ? 'Add a new recipe' : ''
           }
         </button>
 }

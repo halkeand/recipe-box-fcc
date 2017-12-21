@@ -5,7 +5,7 @@ const RecipeCard = props => {
   return (
     <div className="recipe-card animated bounceIn">
       <h1 className="recipe-card-title">{name}</h1>
-      <ul className="ingredient-list">
+      <ul className="ingredient-list animated swing">
         {ingredients.map(ingredient => {
           return <li className="ingredient-item" key={ingredient}>{ingredient}</li>
           })}

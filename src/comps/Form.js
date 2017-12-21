@@ -7,9 +7,9 @@ const Form = props => {
   return (
     <form className={`form animated rotateInDownLeft ${formClass ? formClass : ''}`} id={formType}>
       <h1 className="form-title">{formType}</h1>
-      <label>Recipe Name</label>
+      <label className="animated bounceInRight">Recipe Name</label>
       <input
-        className="input"
+        className="input animated bounceInRight"
         autoFocus
         name="nameValue"
         onChange={onChange}
@@ -17,9 +17,9 @@ const Form = props => {
         type="text"
         placeholder="Enter a recipe name"/>
 
-      <label>Recipe Ingredients</label>
+      <label className="animated bounceInRight">Recipe Ingredients</label>
       <textarea
-        className="input ingredients-input"
+        className="input ingredients-input animated bounceInRight"
         name="ingredientsValue"
         onChange={onChange}
         value={ingredientsValue}
