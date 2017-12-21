@@ -11,7 +11,7 @@ const RecipeCard = props => {
           })}
       </ul>
       <div className="card-footer">
-        <button className="btn btn-edit" onClick={onEdit} name={recipeId}>Edit</button>
+        <a href="#Edit"> <button className="btn btn-edit" onClick={onEdit} name={recipeId}>Edit</button></a>
         <button className="btn btn-delete" onClick={onDelete} name={recipeId}>Delete</button>
       </div>
     </div>
