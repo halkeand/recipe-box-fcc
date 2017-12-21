@@ -6,28 +6,27 @@ const Form = props => {
 
   return (
     <form className={`form ${formClass ? formClass : ''}`}>
-      <label>Recipe Name
-        <input
-          className="input"
-          autoFocus
-          name="nameValue"
-          onChange={onChange}
-          value={nameValue}
-          type="text"
-          placeholder="Enter a recipe name"/>
-      </label>
+      <label>Recipe Name</label>
+      <input
+        className="input"
+        autoFocus
+        name="nameValue"
+        onChange={onChange}
+        value={nameValue}
+        type="text"
+        placeholder="Enter a recipe name"/>
 
-      <label>Recipe Ingredients
-        <textarea
-          className="input ingredients-input"
-          name="ingredientsValue"
-          onChange={onChange}
-          value={ingredientsValue}
-          type="text"
-          placeholder="Separate ingredients by comma (,)"/>
-      </label>
-
+      <label>Recipe Ingredients</label>
+      <textarea
+        className="input ingredients-input"
+        name="ingredientsValue"
+        onChange={onChange}
+        value={ingredientsValue}
+        type="text"
+        placeholder="Separate ingredients by comma (,)"/>
+        
       <Button
+        classList="btn"
         btnType="Save"
         onClick={onSubmit}/>
 
