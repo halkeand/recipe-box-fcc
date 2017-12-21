@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/App.css';
 
 import { isInputFilled, sanitizeObj, makeArr, giveObjFromId, filterWithoutThisId, getLS, setLS } from './utils';
 
@@ -140,7 +140,6 @@ class App extends Component {
 
       this.setState(prevState => ({
         warning: '',
-        isAdding: false,
         isEditing: '',
         recipesList: filterWithoutThisId(prevState.recipesList, newRecipe.id).concat(sanitizeObj(newRecipe))
       }));
@@ -163,37 +162,38 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <Button
-          btnType="Add"
-          onClick={this.handleBtnClick}
-          isAdding={isAdding}/>
+        <main className="main">
+          <Button
+            btnType="Add"
+            onClick={this.handleBtnClick}
+            isAdding={isAdding}/>
 
-        {
-          isAdding ?
-          <Form
-            nameValue={form.nameValue}
-            ingredientsValue={form.ingredientsValue}
-            onChange={this.handleInputChange}
-            onSubmit={this.handleSubmit}
-            warning={warning}/> : ''
-        }
+          {
+            isAdding ?
+            <Form
+              nameValue={form.nameValue}
+              ingredientsValue={form.ingredientsValue}
+              onChange={this.handleInputChange}
+              onSubmit={this.handleSubmit}
+              warning={warning}/> : ''
+          }
 
-        <RecipesList
-          recipesList={recipesList}
-          onEdit={this.handleEdit}
-          onDelete={this.handleDelete}/>
+          <RecipesList
+            recipesList={recipesList}
+            onEdit={this.handleEdit}
+            onDelete={this.handleDelete}/>
 
-        {
-          typeof isEditing === 'number' ?
-          <Form
-            formClass="form-editing"
-            nameValue={editingForm.nameValue}
-            ingredientsValue={editingForm.ingredientsValue}
-            onChange={this.handleEditingChange}
-            onSubmit={this.handleEditingSave}
-            warning={warning}/> : ''
-        }
-
+          {
+            typeof isEditing === 'number' ?
+            <Form
+              formClass="form-editing"
+              nameValue={editingForm.nameValue}
+              ingredientsValue={editingForm.ingredientsValue}
+              onChange={this.handleEditingChange}
+              onSubmit={this.handleEditingSave}
+              warning={warning}/> : ''
+          }
+        </main>
       </div>
     );
   }

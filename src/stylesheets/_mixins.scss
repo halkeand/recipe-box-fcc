@@ -1,0 +1,38 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+@mixin b-shad {
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
+}
+//Thanks CSS Tricks !
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+@mixin textured-text ($img-url){
+  background: url($img-url) no-repeat center center;
+  background-size:100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

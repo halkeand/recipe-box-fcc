@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+:root{
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 100Vh;
+}

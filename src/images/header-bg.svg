@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3220px" height="400px" viewBox="0 0 3220 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>header-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="51.2020834%" cy="70.7998007%" fx="51.2020834%" fy="70.7998007%" r="327.685442%" gradientTransform="translate(0.512021,0.707998),scale(0.124248,1.000000),rotate(90.000001),scale(1.000000,2.009289),translate(-0.512021,-0.707998)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#00ABF2" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="11.9284062%" y1="77.7236483%" x2="93.5836505%" y2="41.0539284%" id="linearGradient-2">
+            <stop stop-color="#14DC81" stop-opacity="0.362941576" offset="0%"></stop>
+            <stop stop-color="#1DA6E3" stop-opacity="0.242329031" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0" y="0" width="3219.37716" height="400"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-bg">
+            <g id="bg">
+                <use fill="url(#radialGradient-1)" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+            </g>
+            <g id="pattern" transform="translate(59.000000, 29.000000)" stroke="#FFFFFF">
+                <polygon id="Triangle" points="832.525952 261.266436 794.463668 187.910035 870.588235 187.910035"></polygon>
+                <polygon id="Triangle-Copy-12" points="344.636678 298.636678 268.512111 263.460676 327.924755 218.359862"></polygon>
+                <polygon id="Triangle-Copy-6" points="410.380623 165.764706 448.442907 92.4083045 372.318339 92.4083045"></polygon>
+                <polygon id="Triangle-Copy-2" points="605.536332 207.287197 643.598616 280.643599 567.474048 280.643599"></polygon>
+                <polygon id="Triangle-Copy-7" points="450.519031 207.287197 488.581315 280.643599 412.456747 280.643599"></polygon>
+                <polygon id="Triangle-Copy-4" points="1666.77689 82.7197232 1677.50865 172.685121 1598.61592 144.981958"></polygon>
+                <polygon id="Triangle-Copy-13" points="2422.48623 73.0311419 2433.21799 162.99654 2354.32526 135.293376"></polygon>
+                <polygon id="Triangle-Copy-8" points="1432.86686 67.4948097 1443.59862 157.460208 1364.70588 129.757044"></polygon>
+                <polygon id="Triangle-Copy" points="1833.41167 49.5017301 1850.51903 113.16955 1791.00346 100.936631"></polygon>
+                <polygon id="Triangle-Copy-14" points="2590.5051 37.0449827 2607.61246 100.712803 2548.09689 88.4798835"></polygon>
+                <polygon id="Triangle-Copy-9" points="686.360676 74.4152249 743.252595 286.179931 545.32872 245.492178"></polygon>
+                <polygon id="Triangle-Copy-16" points="1659.51557 180.403006 1460.36526 284.795848 1453.2872 89.6401384"></polygon>
+                <polygon id="Triangle-Copy-17" points="2908.65052 145.478071 2589.20808 312.802768 2577.85467 7.10542736e-15"></polygon>
+                <polygon id="Triangle-Copy-3" points="1924.97961 201.750865 1939.10035 320.782007 1835.29412 284.128591"></polygon>
+                <polygon id="Triangle-Copy-15" points="2680.68895 192.062284 2694.80969 311.093426 2591.00346 274.440009"></polygon>
+                <polygon id="Triangle-Copy-10" points="1358.93546 250.193772 1366.08997 309.709343 1313.49481 291.382634"></polygon>
+                <polygon id="Triangle-Copy-5" points="2359.86159 256.371325 2264.7566 312.477509 2256.05536 216.975779"></polygon>
+                <polygon id="Triangle-Copy-11" points="275.432526 84.1038062 175.170445 342.927336 2.84217094e-14 162.249637"></polygon>
+                <ellipse id="Oval" cx="1557.09343" cy="234.276817" rx="58.1314879" ry="56.0553633"></ellipse>
+                <ellipse id="Oval-Copy-14" cx="1975.08651" cy="228.740484" rx="58.1314879" ry="56.0553633"></ellipse>
+                <ellipse id="Oval-Copy-12" cx="2314.18685" cy="223.204152" rx="58.1314879" ry="56.0553633"></ellipse>
+                <ellipse id="Oval-Copy-6" cx="2366.78201" cy="111.093426" rx="58.1314879" ry="56.0553633"></ellipse>
+                <ellipse id="Oval-Copy-2" cx="246.366782" cy="182.373702" rx="65.0519031" ry="62.283737"></ellipse>
+                <ellipse id="Oval-Copy-7" cx="1220.76125" cy="258.49827" rx="65.0519031" ry="62.283737"></ellipse>
+                <ellipse id="Oval-Copy-4" cx="2980.62284" cy="277.183391" rx="40.8304498" ry="39.4463668"></ellipse>
+                <ellipse id="Oval-Copy-8" cx="2624.91349" cy="274.415225" rx="40.8304498" ry="39.4463668"></ellipse>
+                <ellipse id="Oval-Copy" cx="986.851211" cy="265.418685" rx="34.6020761" ry="33.2179931"></ellipse>
+                <ellipse id="Oval-Copy-9" cx="1677.50865" cy="261.266436" rx="34.6020761" ry="33.2179931"></ellipse>
+                <ellipse id="Oval-Copy-13" cx="2433.21799" cy="250.193772" rx="34.6020761" ry="33.2179931"></ellipse>
+                <ellipse id="Oval-Copy-3" cx="1045.67474" cy="167.84083" rx="31.1418685" ry="29.7577855"></ellipse>
+                <ellipse id="Oval-Copy-10" cx="890.657439" cy="166.456747" rx="31.1418685" ry="29.7577855"></ellipse>
+                <ellipse id="Oval-Copy-5" cx="1308.65052" cy="111.093426" rx="31.1418685" ry="29.7577855"></ellipse>
+                <ellipse id="Oval-Copy-11" cx="988.927336" cy="111.093426" rx="31.1418685" ry="29.7577855"></ellipse>
+                <polygon id="Polygon-Copy-2" points="2064.47821 56.4221453 2091.34948 94.7405238 2061.76468 131.16263 2016.609 115.354351 2018.28605 69.162191"></polygon>
+                <polygon id="Polygon-Copy-14" points="2820.18755 45.349481 2847.05882 83.6678594 2817.47403 120.089965 2772.31834 104.281686 2773.99539 58.0895266"></polygon>
+                <polygon id="Polygon-Copy-6" points="1863.78616 197.598616 1890.65744 235.916994 1861.07264 272.3391 1815.91696 256.530821 1817.594 210.338662"></polygon>
+                <polygon id="Polygon-Copy-15" points="3033.66545 25.9723183 3100.34602 121.058665 3026.93189 211.439446 2914.87889 172.211495 2919.04046 57.5865057"></polygon>
+                <polygon id="Polygon-Copy" points="2728.86487 225.280277 2764.01384 194.50854 2754.18012 149.525841 2709.19742 135.314879 2674.04844 166.086616 2683.88217 211.069315"></polygon>
+                <polygon id="Polygon-Copy-7" points="1926.0967 193.446367 1881.114 179.235405 1871.28028 134.252706 1906.42925 103.480969 1951.41195 117.691931 1961.24567 162.67463"></polygon>
+                <polygon id="Polygon-Copy-16" points="2681.80604 182.373702 2716.95502 151.601966 2707.12129 106.619267 2662.13859 92.4083045 2626.98962 123.180041 2636.82335 168.16274"></polygon>
+                <polygon id="Polygon" points="2108.05757 248.809689 2134.25606 218.909345 2120.31613 182.231145 2080.17772 175.453287 2053.97924 205.35363 2067.91916 242.031831"></polygon>
+                <polygon id="Polygon-Copy-17" points="2863.76691 237.737024 2889.9654 207.836681 2876.02548 171.15848 2835.88707 164.380623 2809.68858 194.280966 2823.6285 230.959167"></polygon>
+                <polygon id="Polygon-Copy-8" points="2231.24096 128.394464 2257.43945 98.4941205 2243.49952 61.8159198 2203.36112 55.0380623 2177.16263 84.9384054 2191.10255 121.616606"></polygon>
+                <polygon id="Polygon-Copy-18" points="3034.00913 156.076125 3060.20761 126.175781 3046.26769 89.4975807 3006.12928 82.7197232 2979.9308 112.620066 2993.87072 149.298267"></polygon>
+                <polygon id="Polygon-Copy-12" points="1234.70117 151.923875 1260.89965 122.023532 1246.95973 85.3453316 1206.82132 78.567474 1180.62284 108.467817 1194.56276 145.146018"></polygon>
+                <polygon id="Polygon-Copy-13" points="1185.77284 304.17301 1253.97924 225.755129 1217.68737 129.561358 1113.1891 111.785467 1044.9827 190.203348 1081.27457 286.39712"></polygon>
+                <polygon id="Polygon-Copy-4" points="2128.81882 210.055363 2155.0173 180.15502 2141.07738 143.476819 2100.93897 136.698962 2074.74048 166.599305 2088.68041 203.277506"></polygon>
+                <polygon id="Polygon-Copy-19" points="2884.52816 198.982699 2910.72664 169.082356 2896.78672 132.404155 2856.64831 125.626298 2830.44983 155.526641 2844.38975 192.204841"></polygon>
+                <polygon id="Polygon-Copy-9" points="1809.09563 210.055363 1835.29412 180.15502 1821.35419 143.476819 1781.21579 136.698962 1755.0173 166.599305 1768.95722 203.277506"></polygon>
+                <polygon id="Polygon-Copy-20" points="2566.18906 197.598616 2592.38754 167.698273 2578.44762 131.020072 2538.30921 124.242215 2512.11073 154.142558 2526.05065 190.820758"></polygon>
+                <polygon id="Polygon-Copy-3" points="2484.20137 146.387543 2539.79239 205.832712 2498.25265 275.107266 2416.98867 258.476126 2408.3045 178.922963"></polygon>
+                <polygon id="Polygon-Copy-10" points="2167.24635 145.00346 2222.83737 204.448629 2181.29764 273.723183 2100.03365 257.092043 2091.34948 177.538879"></polygon>
+                <polygon id="Polygon-Copy-21" points="2922.9557 135.314879 2978.54671 194.760048 2937.00698 264.034602 2855.74299 247.403462 2847.05882 167.850298"></polygon>
+                <polygon id="Polygon-Copy-5" points="781.314879 42.5813149 833.217993 78.5310571 813.392768 136.698962 749.23699 136.698962 729.411765 78.5310571"></polygon>
+                <polygon id="Polygon-Copy-11" points="558.477509 79.9515571 610.380623 115.901299 590.555397 174.069204 526.39962 174.069204 506.574394 115.901299"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

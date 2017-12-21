@@ -1,0 +1,5 @@
+.main {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: $header-height;
+}
