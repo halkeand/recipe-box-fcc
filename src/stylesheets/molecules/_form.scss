@@ -1,4 +1,18 @@
 .form {
+  width: 30%;
   display: flex;
   flex-direction: column;
+  textarea { resize:none }
+  label, .warn-msg {text-align: center}
+  label {padding: 10px;}
+  input, textarea{
+    border-radius: $b-rad;
+    border: 1px solid $b-shad-color;
+    padding: 10px;
+    font-size: .8rem;
+  }
+  .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

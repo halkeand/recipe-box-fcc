@@ -24,9 +24,9 @@ const Form = props => {
         value={ingredientsValue}
         type="text"
         placeholder="Separate ingredients by comma (,)"/>
-        
+
       <Button
-        classList="btn"
+        classList="btn btn-edit"
         btnType="Save"
         onClick={onSubmit}/>
 
