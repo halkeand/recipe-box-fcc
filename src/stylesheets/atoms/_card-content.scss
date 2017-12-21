@@ -1,0 +1,8 @@
+.ingredient-list {
+  list-style-type: circle;
+  flex: 1;
+}
+
+.ingredient-list li::first-letter {
+  text-transform: uppercase;
+}

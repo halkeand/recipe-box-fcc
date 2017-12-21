@@ -14,9 +14,23 @@
     @include b-shad;
     @include transit(box-shadow);
   }
+
   @include darker-gradient-on-active($pm-color, 10%);
 }
 
+
+//Specials btn
 .btn-add-recipe {
   margin-top: 20px;
+}
+
+.btn-delete {
+  @extend .btn;
+  @include darker-gradient-on-active($warn-color, 10%);
+}
+
+
+.btn-edit {
+  @extend .btn;
+  @include darker-gradient-on-active($sd-color, 10%);
 }

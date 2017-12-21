@@ -10,8 +10,10 @@ const RecipeCard = props => {
           return <li className="ingredient-item" key={ingredient}>{ingredient}</li>
           })}
       </ul>
-      <button className="btn" onClick={onEdit} name={recipeId}>Edit</button>
-      <button className="btn" onClick={onDelete} name={recipeId}>Delete</button>
+      <div className="card-footer">
+        <button className="btn btn-edit" onClick={onEdit} name={recipeId}>Edit</button>
+        <button className="btn btn-delete" onClick={onDelete} name={recipeId}>Delete</button>
+      </div>
     </div>
   );
 }
