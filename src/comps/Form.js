@@ -2,10 +2,11 @@ import React from 'react';
 import Button from './Button';
 
 const Form = props => {
-  const { formClass, warning, onChange, ingredientsValue, nameValue, onSubmit } = props;
+  const { formClass, formType, warning, onChange, ingredientsValue, nameValue, onSubmit } = props;
 
   return (
     <form className={`form ${formClass ? formClass : ''}`}>
+      <h1>{formType}</h1>
       <label>Recipe Name</label>
       <input
         className="input"

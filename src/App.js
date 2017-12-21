@@ -174,6 +174,7 @@ class App extends Component {
           {
             isAdding ?
             <Form
+              formType="Add"
               nameValue={form.nameValue}
               ingredientsValue={form.ingredientsValue}
               onChange={this.handleInputChange}
@@ -189,6 +190,7 @@ class App extends Component {
           {
             typeof isEditing === 'number' ?
             <Form
+              formType="Edit"
               formClass="form-editing"
               nameValue={editingForm.nameValue}
               ingredientsValue={editingForm.ingredientsValue}
