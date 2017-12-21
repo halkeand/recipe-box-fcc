@@ -4,7 +4,7 @@ const RecipeCard = props => {
   const { name, ingredients, onEdit, onDelete, recipeId } = props;
   return (
     <div className="recipe-card">
-      <h1>{name}</h1>
+      <h1 className="recipe-card-title">{name}</h1>
       <ul className="ingredient-list">
         {ingredients.map(ingredient => {
           return <li className="ingredient-item" key={ingredient}>{ingredient}</li>
